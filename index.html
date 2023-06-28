@@ -11,7 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-	
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 		<style>
 			/* Used for toggle display */
 			.hidden {
@@ -70,8 +71,17 @@
 					padding-top: 5em; /* Adds some space above the header. Adjust as needed. */
 				}
 			}
+			.button {
+			transition: background-color 0.5s ease;
+			}
+
+			.button:hover {
+			background-color: #3581B8;
+			}
 		</style>
 		
+		
+
 	</head>
 	<body class="is-preload">
 
@@ -112,7 +122,7 @@
 				<p>Here's my professional experience.</p>
 			</header>
 			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<img src="images/Work_1.png" alt="Work Experience 1" class="work-image"/>
 					<span class="fas fa-briefcase"></span>
@@ -126,7 +136,7 @@
 					</ul>
 				</section>
 				</div>
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<img src="images/Work_2.png" alt="Work Experience 2" class="work-image"/>
 					<span class="fas fa-briefcase"></span>
@@ -153,7 +163,7 @@
 			</header>
 			<div class="row aln-center">
 				<!-- Software Skills -->
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<h3><i class="fas fa-laptop-code"></i> Software</h3>
 					<p>Advanced - ANSYS, SolidWorks, Fusion360</p>
@@ -161,7 +171,7 @@
 				</section>
 				</div>
 				<!-- Programming Skills -->
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<h3><i class="fas fa-code"></i> Programming</h3>
 					<p>Advanced - Python, Arduino, MATLAB, Maple</p>
@@ -169,14 +179,14 @@
 				</section>
 				</div>
 				<!-- Hands-on Skills -->
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<h3><i class="fas fa-tools"></i> Hands-on</h3>
 					<p>Mill, Lathe, Band Saw, Scroll Saw, Drill Press, Laser Cutting, 3D Printer, Soldering, Casting</p>
 				</section>
 				</div>
 				<!-- Language Skills -->
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 				<section class="box style1">
 					<h3><i class="fas fa-language"></i> Languages</h3>
 					<p>English (Fluent), Chinese (Native Speaker), Japanese (Conversational)</p>
@@ -196,7 +206,7 @@
 
 					<div class="row">
 						<!-- Project1_MEG24787 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project1.png" alt="" /></a>
 								<h3><a id="project1-toggle" href="#">Automated Distribution Centers Troubleshooter using ML</a></h3>
@@ -231,7 +241,7 @@
 						</section>
 
 						<!-- Project6_MEG24688 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project6.png" alt="" /></a>
 								<h3><a id="project6-toggle" href="#">Bike Rack Design</a></h3>
@@ -274,7 +284,7 @@
 						</section>
 
 						<!-- Project3_MEG24774 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project3.png" alt="" /></a>
 								<h3><a id="project3-toggle" href="#">Recursive Quadcopter Mass Estimator Design</a></h3>
@@ -305,7 +315,7 @@
 						</section>
 
 						<!-- Project2_MEG24673 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project2.png" alt="" /></a>
 								<h3><a id="project2-toggle" href="#">Soft Robotic Gripper with Sensor</a></h3>
@@ -339,7 +349,7 @@
 						</section>
 
 						<!-- Project5_ME471 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/P5_gif.gif" alt="" /></a>
 								<h3><a id="project5-toggle" href="#">Dual Crank Bike Design</a></h3>
@@ -370,7 +380,7 @@
 						</section>
 
 						<!-- Project7_ME430 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project7.png" alt="" /></a>
 								<h3><a id="project7-toggle" href="#">Cleaning Robot Design</a></h3>
@@ -399,7 +409,7 @@
 						</section>
 
 						<!-- Project4_ECE425 -->
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/Project4.png" alt="" /></a>
 								<h3><a id="project4-toggle" href="#">Wireless Communication, GUI, & Navigation Competencies</a></h3>
@@ -443,54 +453,35 @@
 			</article>
 
 		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Feel free to contact me about any project or collaboration ideas you have.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/jiatongzhang1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/zhangjia8" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
-							<hr />
-						</div>
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Let's make stuff together.</h2>
+					<p>Feel free to reach out to me about any project or collaboration ideas you have.</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<h3 data-aos="fade-up">Contact Information</h3>
+						<p data-aos="fade-up">Email: <a href="mailto:your-email@example.com">jiatongz@andrew.cmu.edu</a></p>
+						<p data-aos="fade-up">Phone: 812-239-8365</p>
 					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Jiatong Zhang. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<div class="col-12">
+						<hr />
+						<h3>Find me on ...</h3>
+						<ul class="social">
+							<li><a href="https://www.linkedin.com/in/jiatongzhang1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/zhangjia8" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						</ul>
-					</footer>
+						<hr />
+					</div>
 				</div>
-			</article>
+				<footer>
+					<ul id="copyright">
+						<li>&copy; Jiatong Zhang. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+			</div>
+		</article>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -564,6 +555,11 @@
 			<script>
 				var video = document.getElementById('myVideo4');
 				video.playbackRate = 2; // Set the playback rate to 2x
+			</script>
+
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+				AOS.init();
 			</script>
 	</body>
 </html>
