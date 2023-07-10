@@ -38,26 +38,36 @@
 
 			/* resize the image*/
 			.work-image {
-			max-width: 100%;
-			height: auto;
+				max-width: 100%;
+				height: auto;
+			}
+			
+			.container {
+				display: flex;
+				flex-wrap: wrap; /* Allows the boxes to wrap onto new lines as needed */
+				justify-content: center;
+			}
+
+			#work .box {
+				flex: 1 0 600px; /* This will make the boxes flex to fill the container up to a max-width of 600px */
 			}
 
 			/* Add this CSS for the portfolio section */
 			#portfolio .box {
-			height: 400px; /* Set a fixed height for the boxes */
-			overflow: hidden; /* Hide any overflowing content within the boxes */
+				height: 400px; /* Set a fixed height for the boxes */
+				overflow: hidden; /* Hide any overflowing content within the boxes */
 			}
 
 			/* Adjust the image height to fit within the box */
 			#portfolio .box .image {
-			height: 60%; /* Set the desired height for the image */
-			overflow: hidden; /* Hide any overflowing image content */
+				height: 60%; /* Set the desired height for the image */
+				overflow: hidden; /* Hide any overflowing image content */
 			}
 
 			/* Adjust the title and description styles */
 			#portfolio .box h3,
 			#portfolio .box p {
-			margin: 0; /* Remove any default margins */
+				margin: 0; /* Remove any default margins */
 			}
 
 			/* Used for video size*/
@@ -71,13 +81,38 @@
 					padding-top: 5em; /* Adds some space above the header. Adjust as needed. */
 				}
 			}
+
 			.button {
-			transition: background-color 0.5s ease;
+				transition: background-color 0.5s ease;
 			}
 
 			.button:hover {
-			background-color: #3581B8;
+				background-color: #3581B8;
 			}
+
+			.work-image-slider {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 75%; /* Adjust the aspect ratio as needed */
+				overflow: hidden;
+			}
+
+			.work-image-slider img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain; /* Adjust the image positioning within the frame */
+			}
+
+			#contact .container.medium {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
 		</style>
 		
 		
@@ -117,82 +152,112 @@
 		<!-- Work -->
 		<article id="work" class="wrapper style2">
 			<div class="container">
-			<header>
-				<h2>Work</h2>
-				<p>Here's my professional experience.</p>
-			</header>
-			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<img src="images/Work_1.png" alt="Work Experience 1" class="work-image"/>
-					<span class="fas fa-briefcase"></span>
-					<h3>Mechanical Design Engineer Intern</h3>
-					<h4>VIM Networks - New York, NY</h4>
-					<p class="date">June 2022 - August 2022</p>
-					<ul>
-					<li>Designed a fiber planting mechanism with a linkage structure using SOLIDWORKS.</li>
-					<li>Led benchmarking of a pipe inspection robot to improve the design of robot wheels.</li>
-					<li>Finalized the fiber planting robot and built it with 3D-printed parts.</li>
-					</ul>
-				</section>
+				<header>
+					<h2>Work</h2>
+					<p>Here's my professional experience.</p>
+				</header>
+				<div class="row aln-center">
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<div class="work-image-slider">
+								<img src="images/Work_1.png" alt="Work Experience 1" class="work-image"/>
+								<img src="images/Work_1_Max.png" alt="Work Experience 1" class="work-image"/>
+								<img src="images/Work_1_Min.png" alt="Work Experience 1" class="work-image"/>
+								<img src="images/Work_1_12Pipe.png" alt="Work Experience 1" class="work-image"/>
+								<img src="images/Work_1_16Pipe.png" alt="Work Experience 1" class="work-image"/>
+							</div>
+							<span class="fas fa-briefcase"></span>
+							<h3>Mechanical Design Engineer Intern</h3>
+							<h4>VIM Networks - New York, NY</h4>
+							<p class="date">June 2022 - August 2022</p>
+							<ul>
+								<li>Led a team of 6 in the successful optimization of a pipe inspection robot, spearheading the benchmarking process and subsequent design changes using Solidworks, enhancing adaptability to both 12-inch and 16-inch pipes.</li>
+								<li>Designed an innovative fiber planting mechanism utilizing a 3-bar linkages structure and SOLIDWORKS, significantly improving planting efficiency.</li>
+								<li>Collaborated with the team in the finalization of the fiber planting robot design, fostering a collective approach to problem-solving.</li>
+								<li>Employed 3D printing technologies in the construction of the robot, demonstrating practical application of advanced manufacturing techniques in robotics.</li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<div class="work-image-slider">
+								<img src="images/Work_2.png" alt="Work Experience 2" class="work-image"/>
+								<img src="images/Work_2_boat.png" alt="Work Experience 2" class="work-image"/>
+							</div>
+							<span class="fas fa-briefcase"></span>
+							<h3>Structural Engineer Intern</h3>
+							<h4>Xi'an Underwater Dynamics Technology Co., Ltd. - Shaanxi, China</h4>
+							<p class="date">June 2020 - August 2020</p>
+							<ul>
+								<li>Constructed models and scrutinized the mechanical properties of the ROV (Remotely Operated Vehicle) utilizing SOLIDWORKS, enhancing understanding of material density and its impact on center of gravity and buoyancy.</li>
+								<li>Designed and implemented experiments to decipher the relationship between motor speed and thrust, leading to the creation of a practical thrust test platform.</li>
+								<li>Leveraged force measurement and main rod moment length to accurately gauge the thrust, promoting a more nuanced understanding of motor performance.</li>
+								<li>Cultivated robust collaboration skills over a three-month internship period, working effectively with diverse teams and contributing to successful project outcomes.</li>
+							</ul>
+							
+							<button onclick="showMoreImages(this)">Show More</button>
+							
+						</section>
+					</div>
 				</div>
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<img src="images/Work_2.png" alt="Work Experience 2" class="work-image"/>
-					<span class="fas fa-briefcase"></span>
-					<h3>Structural Engineer Intern</h3>
-					<h4>Xi'an Underwater Dynamics Technology Co., Ltd. - Shaanxi, China</h4>
-					<p class="date">June 2020 - August 2020</p>
-					<ul>
-					<li>Built models and analyzed the mechanical properties of an ROV using SOLIDWORKS.</li>
-					<li>Designed experiments to test the relationship between motor speed and thrust.</li>
-					<li>Gained strong collaboration skills after working with different teams.</li>
-					</ul>
-				</section>
-				</div>
-			</div>
 			</div>
 		</article>
 		
 		<!-- Skills -->
 		<article id="skills" class="wrapper style3">
 			<div class="container">
-			<header>
-				<h2>Skills</h2>
-				<p>Here are my skills and competencies.</p>
-			</header>
-			<div class="row aln-center">
-				<!-- Software Skills -->
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<h3><i class="fas fa-laptop-code"></i> Software</h3>
-					<p>Advanced - ANSYS, SolidWorks, Fusion360</p>
-					<p>Intermediate - Webots, OpenSim</p>
-				</section>
+				<header>
+					<h2>Skills</h2>
+					<p>Here are my skills and competencies.</p>
+				</header>
+				<div class="row aln-center">
+					<!-- Software Skills -->
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<h3><i class="fas fa-laptop-code"></i> Software</h3>
+							<p>Advanced - ANSYS, SolidWorks, Fusion360</p>
+							<p>Intermediate - Webots, OpenSim</p>
+						</section>
+					</div>
+					<!-- Programming Skills -->
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<h3><i class="fas fa-code"></i> Programming</h3>
+							<p>Advanced - Python, Arduino, MATLAB, Maple</p>
+							<p>Intermediate - Java, R</p>
+						</section>
+					</div>
+					<!-- Hands-on Skills -->
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<h3><i class="fas fa-tools"></i> Hands-on</h3>
+							<p>Mill, Lathe, Band Saw, Scroll Saw, Drill Press, Laser Cutting, 3D Printer, Soldering, Casting</p>
+						</section>
+					</div>
+					<!-- Language Skills -->
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<h3><i class="fas fa-language"></i> Languages</h3>
+							<p>English (Fluent), Chinese (Native Speaker), Japanese (Conversational)</p>
+						</section>
+					</div>
+					<!-- Related Courses -->
+					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<section class="box style1">
+							<h3><i class="fas fa-graduation-cap"></i> Related Courses</h3>
+							<ul>
+								<li>Robot Dynamics and Analysis</li>
+								<li>Multivariable Linear Control</li>
+								<li>Advanced Control Systems Integration</li>
+								<li>Machine Learning and Artificial Intelligence</li>
+								<li>Mobile Robotics</li>
+								<li>Mechatronic Systems</li>
+								<li>Design of Mechanisms</li>
+								<li>Machine Learning with R</li>
+							</ul>
+						</section>
+					</div>
 				</div>
-				<!-- Programming Skills -->
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<h3><i class="fas fa-code"></i> Programming</h3>
-					<p>Advanced - Python, Arduino, MATLAB, Maple</p>
-					<p>Intermediate - Java, R</p>
-				</section>
-				</div>
-				<!-- Hands-on Skills -->
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<h3><i class="fas fa-tools"></i> Hands-on</h3>
-					<p>Mill, Lathe, Band Saw, Scroll Saw, Drill Press, Laser Cutting, 3D Printer, Soldering, Casting</p>
-				</section>
-				</div>
-				<!-- Language Skills -->
-				<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-				<section class="box style1">
-					<h3><i class="fas fa-language"></i> Languages</h3>
-					<p>English (Fluent), Chinese (Native Speaker), Japanese (Conversational)</p>
-				</section>
-				</div>
-			</div>
 			</div>
 		</article>
 
@@ -462,7 +527,7 @@
 				<div class="row">
 					<div class="col-12">
 						<h3 data-aos="fade-up">Contact Information</h3>
-						<p data-aos="fade-up">Email: <a href="mailto:your-email@example.com">jiatongz@andrew.cmu.edu</a></p>
+						<p data-aos="fade-up">Email: <a href="mailto:your-email@example.com">jiatongz@alumni.cmu.edu</a></p>
 						<p data-aos="fade-up">Phone: 812-239-8365</p>
 					</div>
 					<div class="col-12">
@@ -560,6 +625,69 @@
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<script>
 				AOS.init();
+			</script>
+
+			<script>
+				// JavaScript for image slideshow
+				const workImageSliders = document.querySelectorAll('.work-image-slider');
+				workImageSliders.forEach((slider) => {
+				const images = slider.querySelectorAll('img');
+				let index = 0;
+			
+				setInterval(() => {
+					images.forEach((image) => {
+					image.style.display = 'none';
+					});
+			
+					index = (index + 1) % images.length;
+					images[index].style.display = 'block';
+				}, 3000); // Change image every 3 seconds
+				});
+			</script>
+
+			<script>
+			function showMoreImages(button) {
+				var slider = button.parentNode;
+				
+				// Add more images or videos dynamically
+				var newImage1 = document.createElement("img");
+				newImage1.src = "images/W_2_env.jpg";
+				newImage1.alt = "Work Experience 2";
+				newImage1.className = "work-image";
+				
+				var newImage2 = document.createElement("img");
+				newImage2.src = "images/W_2_env2.jpg";
+				newImage2.alt = "Work Experience 2";
+				newImage2.className = "work-image";
+				
+				var newVideo1 = document.createElement("video");
+				newVideo1.controls = true;
+				newVideo1.loop = true; // Enable auto replay
+				var source = document.createElement("source");
+				source.src = "images/W_2_boat.mp4"; // Ensure the correct file extension (.mp4)
+				source.type = "video/mp4";
+				newVideo1.appendChild(source);
+
+				var newVideo2 = document.createElement("video");
+				newVideo2.controls = true;
+				newVideo2.loop = true; // Enable auto replay
+				var source = document.createElement("source");
+				source.src = "images/W_2_video.mp4"; // Ensure the correct file extension (.mp4)
+				source.type = "video/mp4";
+				newVideo2.appendChild(source);
+
+				slider.insertBefore(newVideo1, button.nextSibling);
+				slider.insertBefore(newVideo2, button.nextSibling);
+				slider.insertBefore(newImage1, button.nextSibling);
+				slider.insertBefore(newImage2, button.nextSibling);
+				
+				// Hide the button after showing more images
+				button.style.display = "none";
+
+				// Start playing the video
+  				newVideo1.play();
+				newVideo2.play();
+			}
 			</script>
 	</body>
 </html>
