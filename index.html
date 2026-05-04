@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,112 +8,9 @@
 	<head>
 		<title>Jiatong Zhang Portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-		<style>
-			/* Used for toggle display */
-			.hidden {
-                display: none;
-            }
-
-			/* Change the font color and text alignment */
-			.box {
-			  text-align: left;
-			  color: #333;
-			}
-
-			#project1-details p,
-			#project2-details p,
-			#project3-details p,
-			#project4-details p,
-			#project5-details p,
-			#project6-details p,
-			#project7-details p {
-				text-align: left;
-				color: #333;
-			}
-
-			/* resize the image*/
-			.work-image {
-				max-width: 100%;
-				height: auto;
-			}
-			
-			.container {
-				display: flex;
-				flex-wrap: wrap; /* Allows the boxes to wrap onto new lines as needed */
-				justify-content: center;
-			}
-
-			#work .box {
-				flex: 1 0 600px; /* This will make the boxes flex to fill the container up to a max-width of 600px */
-			}
-
-			/* Add this CSS for the portfolio section */
-			#portfolio .box {
-				height: 400px; /* Set a fixed height for the boxes */
-				overflow: hidden; /* Hide any overflowing content within the boxes */
-			}
-
-			/* Adjust the image height to fit within the box */
-			#portfolio .box .image {
-				height: 60%; /* Set the desired height for the image */
-				overflow: hidden; /* Hide any overflowing image content */
-			}
-
-			/* Adjust the title and description styles */
-			#portfolio .box h3,
-			#portfolio .box p {
-				margin: 0; /* Remove any default margins */
-			}
-
-			/* Used for video size*/
-			video {
-				width: 100%;
-				height: auto;
-			}
-
-			@media only screen and (max-width: 1000px) {
-				header {
-					padding-top: 5em; /* Adds some space above the header. Adjust as needed. */
-				}
-			}
-
-			.button {
-				transition: background-color 0.5s ease;
-			}
-
-			.button:hover {
-				background-color: #3581B8;
-			}
-
-			.work-image-slider {
-				position: relative;
-				width: 100%;
-				height: 0;
-				padding-bottom: 75%; /* Adjust the aspect ratio as needed */
-				overflow: hidden;
-			}
-
-			.work-image-slider img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: contain; /* Adjust the image positioning within the frame */
-			}
-
-			#contact .container.medium {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-
-		</style>
+		<link rel="stylesheet" href="assets/css/portfolio-modern.css" />
 		
 		
 
@@ -123,32 +20,37 @@
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
+					<li><a href="#work">Experience</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-		
-			<div class="container">
-				<!-- Your header content here -->
-				<p style="display: inline-block; margin-right: 10px;">Translate this page:</p>
-				<div id="google_translate_element"></div> <!-- Google Translate -->
-			</div>
+
 		<!-- Home -->
 			
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="Profile Image" /></span>
+							<span class="image fit"><img src="images/pic00.jpg" alt="Jiatong Zhang portrait" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hi. I'm <strong>Jiatong Zhang</strong>.</h1>
+								<p class="eyebrow">JIATONG ZHANG | MECHANICAL ENGINEERING | TEST SYSTEMS | ROBOTICS</p>
+								<h1>Mechanical engineer building motor test systems, robotic hardware, and electromechanical platforms.</h1>
 							</header>
-							<p>I am a recent graduate of Carnegie Mellon University, where I completed a Master of Science in Mechanical Engineering with a specialization in Robotics and Control Systems. Prior to my Master's, I earned a Bachelor of Science in Mechanical Engineering from Rose-Hulman Institute of Technology, complemented with minors in Robotics and Mathematics. I bring robust experience in controller design, robotics design, and testing. Along with this practical knowledge, I have worked extensively with SolidWorks and various programming languages on numerous projects. My passion for innovative and efficient solutions, combined with my skill set, equips me to excel in the field of Mechanical Engineering.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							<p>I design and validate mechanical and electromechanical systems for motor testing, robotic platforms, and data-driven test automation. My work spans fixture design, sensor integration, DAQ workflows, Python-based GUIs, motion control, and hands-on prototype validation.</p>
+							<ul class="quick-facts">
+								<li>Electromechanical test platforms</li>
+								<li>Motor testing &amp; instrumentation</li>
+								<li>Fixture design, GD&amp;T, validation</li>
+								<li>Python GUI, DAQ, data analysis</li>
+							</ul>
+							<div class="hero-actions">
+								<a href="#portfolio" class="button large scrolly">View selected projects</a>
+								<a href="#contact" class="text-link scrolly">Contact me</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -158,11 +60,26 @@
 		<article id="work" class="wrapper style2">
 			<div class="container">
 				<header>
-					<h2>Work</h2>
-					<p>Here's my professional experience.</p>
+					<p class="eyebrow">Experience</p>
+					<h2>Electromechanical test systems and mechanical design</h2>
+					<p>Professional work centered on motor validation, fixture design, instrumentation, DAQ workflows, Python-based test automation tools, prototype validation, and mechanical systems for robotic platforms.</p>
 				</header>
 				<div class="row aln-center">
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+					<div class="col-12">
+						<section class="box style1 experience-featured">
+							<div class="experience-label">Current role</div>
+							<h3>Mechanical Engineer</h3>
+							<h4>JL MAG USA Inc. | Southern California</h4>
+							<p class="date">2023 - Present</p>
+							<ul>
+								<li>Designed and built electromechanical test platforms for motor validation, including fixture design, sensor integration, motor drive integration, and DAQ workflows.</li>
+								<li>Developed Python-based GUI tools for automated test execution, real-time data acquisition, post-processing, FFT analysis, and report generation.</li>
+								<li>Integrated torque sensors, motor drives, DAQ hardware, and custom mechanical assemblies to support repeatable engineering validation.</li>
+								<li>Supported GD&amp;T, machining, inspection, and fixture iteration for production and R&amp;D test systems.</li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
 						<section class="box style1">
 							<div class="work-image-slider">
 								<img src="images/Work_1.png" alt="Work Experience 1" class="work-image"/>
@@ -171,7 +88,6 @@
 								<img src="images/Work_1_12Pipe.png" alt="Work Experience 1" class="work-image"/>
 								<img src="images/Work_1_16Pipe.png" alt="Work Experience 1" class="work-image"/>
 							</div>
-							<span class="fas fa-briefcase"></span>
 							<h3>Mechanical Design Engineer Intern</h3>
 							<h4>VIM Networks - New York, NY</h4>
 							<p class="date">June 2022 - August 2022</p>
@@ -183,13 +99,12 @@
 							</ul>
 						</section>
 					</div>
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+					<div class="col-4 col-6-medium col-12-small">
 						<section class="box style1">
 							<div class="work-image-slider">
 								<img src="images/Work_2.png" alt="Work Experience 2" class="work-image"/>
 								<img src="images/Work_2_boat.png" alt="Work Experience 2" class="work-image"/>
 							</div>
-							<span class="fas fa-briefcase"></span>
 							<h3>Structural Engineer Intern</h3>
 							<h4>Xi'an Underwater Dynamics Technology Co., Ltd. - Shaanxi, China</h4>
 							<p class="date">June 2020 - August 2020</p>
@@ -200,7 +115,7 @@
 								<li>Cultivated robust collaboration skills over a three-month internship period, working effectively with diverse teams and contributing to successful project outcomes.</li>
 							</ul>
 							
-							<button onclick="showMoreImages(this)">Show More</button>
+							<button class="show-more-media" type="button">Show More</button>
 							
 						</section>
 					</div>
@@ -212,56 +127,95 @@
 		<article id="skills" class="wrapper style3">
 			<div class="container">
 				<header>
+					<p class="eyebrow">Capabilities</p>
 					<h2>Skills</h2>
-					<p>Here are my skills and competencies.</p>
+					<p>Engineering strengths used across electromechanical test platforms, instrumentation, prototype validation, and manufacturing support.</p>
 				</header>
-				<div class="row aln-center">
-					<!-- Software Skills -->
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-						<section class="box style1">
-							<h3><i class="fas fa-laptop-code"></i> Software</h3>
-							<p>Advanced - ANSYS, SolidWorks, Fusion360</p>
-							<p>Intermediate - Webots, OpenSim</p>
-						</section>
-					</div>
-					<!-- Programming Skills -->
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-						<section class="box style1">
-							<h3><i class="fas fa-code"></i> Programming</h3>
-							<p>Advanced - Python, Arduino, MATLAB, Maple</p>
-							<p>Intermediate - Java, R</p>
-						</section>
-					</div>
-					<!-- Hands-on Skills -->
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-						<section class="box style1">
-							<h3><i class="fas fa-tools"></i> Hands-on</h3>
-							<p>Mill, Lathe, Band Saw, Scroll Saw, Drill Press, Laser Cutting, 3D Printer, Soldering, Casting</p>
-						</section>
-					</div>
-					<!-- Language Skills -->
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-						<section class="box style1">
-							<h3><i class="fas fa-language"></i> Languages</h3>
-							<p>English (Fluent), Chinese (Native Speaker), Japanese (Conversational)</p>
-						</section>
-					</div>
-					<!-- Related Courses -->
-					<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
-						<section class="box style1">
-							<h3><i class="fas fa-graduation-cap"></i> Related Courses</h3>
-							<ul>
-								<li>Robot Dynamics and Analysis</li>
-								<li>Multivariable Linear Control</li>
-								<li>Advanced Control Systems Integration</li>
-								<li>Machine Learning and Artificial Intelligence</li>
-								<li>Mobile Robotics</li>
-								<li>Mechatronic Systems</li>
-								<li>Design of Mechanisms</li>
-								<li>Machine Learning with R</li>
-							</ul>
-						</section>
-					</div>
+				<div class="skills-grid">
+					<section class="skill-card">
+						<h3>Test Systems &amp; Motor Validation</h3>
+						<ul class="skill-chips">
+							<li>Electromechanical test platforms</li>
+							<li>Motor testing</li>
+							<li>Torque measurement</li>
+							<li>DAQ systems</li>
+							<li>Prototype validation</li>
+							<li>Repeatable test workflows</li>
+							<li>Motor drive integration</li>
+						</ul>
+					</section>
+					<section class="skill-card">
+						<h3>Fixture Design &amp; Mechanical Engineering</h3>
+						<ul class="skill-chips">
+							<li>Fixture design</li>
+							<li>GD&amp;T</li>
+							<li>Custom mechanical assemblies</li>
+							<li>Tolerance analysis</li>
+							<li>DFM/DFA</li>
+							<li>SolidWorks</li>
+							<li>Fusion 360</li>
+							<li>FEA</li>
+						</ul>
+					</section>
+					<section class="skill-card">
+						<h3>Instrumentation &amp; Data Acquisition</h3>
+						<ul class="skill-chips">
+							<li>Sensor integration</li>
+							<li>Torque sensors</li>
+							<li>DAQ systems</li>
+							<li>Signal conditioning</li>
+							<li>Real-time data acquisition</li>
+							<li>Test instrumentation</li>
+							<li>Post-processing</li>
+						</ul>
+					</section>
+					<section class="skill-card">
+						<h3>Programming &amp; Analysis</h3>
+						<ul class="skill-chips">
+							<li>Python</li>
+							<li>Python GUI development</li>
+							<li>PyQt</li>
+							<li>Automated test execution</li>
+							<li>FFT analysis</li>
+							<li>Data logging</li>
+							<li>Report generation</li>
+							<li>MATLAB</li>
+						</ul>
+					</section>
+					<section class="skill-card">
+						<h3>Motion Control &amp; Robotics</h3>
+						<ul class="skill-chips">
+							<li>Motion control</li>
+							<li>Control systems</li>
+							<li>Motor drives</li>
+							<li>Mechatronics</li>
+							<li>Robot dynamics</li>
+							<li>Mobile robotics</li>
+							<li>Webots</li>
+							<li>OpenSim</li>
+						</ul>
+					</section>
+					<section class="skill-card">
+						<h3>Manufacturing &amp; Inspection Support</h3>
+						<ul class="skill-chips">
+							<li>CNC machining</li>
+							<li>Wire EDM</li>
+							<li>CMM inspection</li>
+							<li>Contour measurement</li>
+							<li>Grinding</li>
+							<li>Metal 3D printing</li>
+							<li>CAM training</li>
+							<li>Manufacturing support</li>
+						</ul>
+					</section>
+					<section class="skill-card skill-card-secondary">
+						<h3>Languages</h3>
+						<ul class="skill-chips">
+							<li>English - Fluent</li>
+							<li>Chinese - Native</li>
+							<li>Japanese - Conversational</li>
+						</ul>
+					</section>
 				</div>
 			</div>
 		</article>
@@ -270,20 +224,32 @@
 			<article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Here's some stuff I made recently.</h2>
-						<p>A collection of projects highlighting my skills and experience.</p>
+						<p class="eyebrow">Selected work</p>
+						<h2>Project portfolio</h2>
+						<p>Engineering projects across machine learning, mechanical design, soft robotics, controls, and mobile robots.</p>
 					</header>
 
-					<div class="row">
+					<div class="row project-grid">
 						<!-- Project1_MEG24787 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project1.png" alt="" /></a>
-								<h3><a id="project1-toggle" href="#">Automated Distribution Centers Troubleshooter using ML</a></h3>
-								<p>(Carnegie Mellon University, Spring 2023)</p>
+								<span class="image featured"><img src="images/Project1.png" alt="Machine learning troubleshooting interface" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">CMU | Spring 2023 | ML + GUI</p>
+									<h3>Automated Distribution Center Troubleshooter</h3>
+									<p>Built a classifier workflow and GUI to help diagnose electrical issues in automation systems.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>Python</li>
+										<li>Random Forest</li>
+										<li>GUI</li>
+										<li>Classification</li>
+									</ul>
+									<p class="project-outcome"><strong>Outcome:</strong> 79% test accuracy for electrical issue classification.</p>
+									<button class="project-toggle" type="button" data-target="project1-details" aria-controls="project1-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project1-details" class="hidden">
+						<section id="project1-details" class="hidden project-detail">
 							<p>
 							With the goal of improving troubleshooting efficiency in distribution center automation systems, our project focuses on incorporating machine learning algorithms into the troubleshooting process. The aim is to quickly classify the type of problem (hardware, sensor, or wiring/power) within the category of electrical issues. This allows engineers to address the problem using the most effective method.
 							</p>
@@ -311,14 +277,25 @@
 						</section>
 
 						<!-- Project6_MEG24688 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project6.png" alt="" /></a>
-								<h3><a id="project6-toggle" href="#">Bike Rack Design</a></h3>
-								<p>(Carnegie Mellon University, Spring 2023)</p>
+								<span class="image featured"><img src="images/Project6.png" alt="Bike rack CAD assembly" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">CMU | Spring 2023 | DFM + FEA</p>
+									<h3>Bike Rack Design</h3>
+									<p>Designed a manufacturable two-bike rack with improved storage, assembly, and structural performance.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>Fusion 360</li>
+										<li>FEA</li>
+										<li>DFM/DFA</li>
+										<li>CAD</li>
+									</ul>
+									<p class="project-outcome"><strong>Outcome:</strong> Reduced rack mass from 13.28 kg to 10.22 kg.</p>
+									<button class="project-toggle" type="button" data-target="project6-details" aria-controls="project6-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project6-details" class="hidden">
+						<section id="project6-details" class="hidden project-detail">
 							<p>
 								The project aimed to design a bike rack for a concept car of an automotive company. The design needed to accommodate two bikes, allow easy attachment/detachment, save storage space, and cater to various bike sizes and frame styles. Importantly, the design had to demonstrate Design for Manufacturing (DFM) and Design for Assembly (DFA) techniques.
 							</p>
@@ -347,25 +324,36 @@
 							<p>
 								The project resulted in a functional, easy-to-use, and adaptable bike rack design that satisfies customer needs. The rack was safe, secure, and efficient, featuring a design ready for manufacturing and assembly.
 							</p>
-							<video id="myVideo2" controls muted autoplay>
+							<video id="myVideo2" controls muted>
 								<source src="images/P6_assemble.mp4">
 								Your browser does not support the video tag.
 							</video>
 						</section>
 
 						<!-- Project3_MEG24774 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project3.png" alt="" /></a>
-								<h3><a id="project3-toggle" href="#">Recursive Quadcopter Mass Estimator Design</a></h3>
-								<p>(Carnegie Mellon University, Fall 2022)</p>
+								<span class="image featured"><img src="images/Project3.png" alt="CrazyFlie quadcopter mass estimation project" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">CMU | Fall 2022 | Controls</p>
+									<h3>Recursive Quadcopter Mass Estimator</h3>
+									<p>Integrated recursive least squares mass estimation into a CrazyFlie control workflow.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>RLS</li>
+										<li>PID</li>
+										<li>CrazyFlie</li>
+										<li>Data logging</li>
+									</ul>
+									<p class="project-outcome"><strong>Focus:</strong> Payload mass estimation for improved trajectory tracking.</p>
+									<button class="project-toggle" type="button" data-target="project3-details" aria-controls="project3-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project3-details" class="hidden">
+						<section id="project3-details" class="hidden project-detail">
 							<p>
 								This project focuses on the development of a mass estimator for drone payloads and its integration into the controller of a CrazyFlie quadcopter. The objective is to address the challenges posed by variable system dynamics resulting from changes in payload weight and mid-flight delivery mechanisms.
 							</p>
-							<video id="myVideo" controls muted autoplay>
+							<video id="myVideo" controls muted>
 								<source src="images/demo.mp4">
 								Your browser does not support the video tag.
 							</video>
@@ -385,14 +373,25 @@
 						</section>
 
 						<!-- Project2_MEG24673 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project2.png" alt="" /></a>
-								<h3><a id="project2-toggle" href="#">Soft Robotic Gripper with Sensor</a></h3>
-								<p>(Carnegie Mellon University, Spring 2022)</p>
+								<span class="image featured"><img src="images/Project2.png" alt="Soft robotic gripper with flex sensor" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">CMU | Spring 2022 | Soft robotics</p>
+									<h3>Soft Robotic Gripper with Sensor</h3>
+									<p>Fabricated a pneumatic gripper and validated flex-sensor feedback against measured bending angles.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>Arduino</li>
+										<li>Flex sensors</li>
+										<li>Pneumatics</li>
+										<li>Validation</li>
+									</ul>
+									<p class="project-outcome"><strong>Focus:</strong> Real-time bending feedback for soft robotic actuation.</p>
+									<button class="project-toggle" type="button" data-target="project2-details" aria-controls="project2-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project2-details" class="hidden">
+						<section id="project2-details" class="hidden project-detail">
 							<p>
 								Implementing traditional sensors on soft robots presents significant challenges. In this project, our team introduce a novel approach by developing a soft robot that seamlessly integrates both sensing and actuation capabilities. Our project involved designing a 3D printed mold, fabricating a pneumatic actuated gripper, and implementing flex sensors to enable real-time measurement of bending angle.
 							</p>
@@ -419,14 +418,25 @@
 						</section>
 
 						<!-- Project5_ME471 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/P5_gif.gif" alt="" /></a>
-								<h3><a id="project5-toggle" href="#">Dual Crank Bike Design</a></h3>
-								<p>(Rose-Hulman Institute of Technology, Winter 2020-2021)</p>
+								<span class="image featured"><img src="images/P5_gif.gif" alt="Dual crank bike mechanism animation" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">Rose-Hulman | 2020-2021 | Mechanisms</p>
+									<h3>Dual Crank Bike Design</h3>
+									<p>Developed a hand-driven clutch concept and supporting mechanical components for prone cycling.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>SolidWorks</li>
+										<li>ANSYS</li>
+										<li>FEA</li>
+										<li>Mechanisms</li>
+									</ul>
+									<p class="project-outcome"><strong>Focus:</strong> Clutch, steering lock, protective case, and fatigue risk.</p>
+									<button class="project-toggle" type="button" data-target="project5-details" aria-controls="project5-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project5-details" class="hidden">
+						<section id="project5-details" class="hidden project-detail">
 							<p>
 								The project was initiated by a cycling enthusiast with the vision to develop a dual crank bicycle that could be operated in a prone position. The primary aim was to introduce this new riding style into the market at a low cost and as an accessory to standard bikes.
 							</p>
@@ -450,14 +460,25 @@
 						</section>
 
 						<!-- Project7_ME430 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project7.png" alt="" /></a>
-								<h3><a id="project7-toggle" href="#">Cleaning Robot Design</a></h3>
-								<p>(Rose-Hulman Institute of Technology, Fall 2020-2021)</p>
+								<span class="image featured"><img src="images/Project7.png" alt="Autonomous cleaning robot prototype" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">Rose-Hulman | 2020-2021 | Embedded robotics</p>
+									<h3>Cleaning Robot Design</h3>
+									<p>Built an autonomous mobile robot prototype with obstacle sensing and basic cleaning behavior.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>Arduino</li>
+										<li>IR sensor</li>
+										<li>Ultrasonic sensor</li>
+										<li>3D printing</li>
+									</ul>
+									<p class="project-outcome"><strong>Focus:</strong> Obstacle avoidance and autonomous wandering behavior.</p>
+									<button class="project-toggle" type="button" data-target="project7-details" aria-controls="project7-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project7-details" class="hidden">
+						<section id="project7-details" class="hidden project-detail">
 							<p>
 								The primary goal of this project was to design a robotic cleaner capable of navigating its environment autonomously. The robot needed to avoid obstacles and perform cleaning operations.
 							</p>
@@ -479,14 +500,25 @@
 						</section>
 
 						<!-- Project4_ECE425 -->
-						<div class="col-4 col-6-medium col-12-small" data-aos="fade-up">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Project4.png" alt="" /></a>
-								<h3><a id="project4-toggle" href="#">Wireless Communication, GUI, & Navigation Competencies</a></h3>
-								<p>(Rose-Hulman Institute of Technology, Winter 2019-2020)</p>
+								<span class="image featured"><img src="images/Project4.png" alt="Mobile robot navigation and GUI project" /></span>
+								<div class="project-card-body">
+									<p class="project-meta">Rose-Hulman | 2019-2020 | Navigation</p>
+									<h3>Wireless Communication, GUI, and Navigation</h3>
+									<p>Implemented MATLAB GUI, wireless data flow, path planning, localization, and mapping for a mobile robot.</p>
+									<ul class="project-tags" aria-label="Tools and skills used">
+										<li>MATLAB</li>
+										<li>GUI</li>
+										<li>Path planning</li>
+										<li>Mapping</li>
+									</ul>
+									<p class="project-outcome"><strong>Focus:</strong> Wireless communication, localization, and robot navigation.</p>
+									<button class="project-toggle" type="button" data-target="project4-details" aria-controls="project4-details" aria-expanded="false">View case study</button>
+								</div>
 							</article>
 						</div>
-						<section id="project4-details" class="hidden">
+						<section id="project4-details" class="hidden project-detail">
 							<p>
 								The aim of this project was to develop multiple navigation competencies for a mobile robot named 'Cog'. Leveraging wireless communication and graphical user interfaces, we implemented path planning, path following, localization, and mapping operations using MATLAB and Cog.
 							</p>
@@ -497,14 +529,14 @@
 							<p>
 								The team successfully implemented wireless communication between Cog and MATLAB, designing a user interface to visualize transmitted data. We employed both topological and metric navigation methodologies to maneuver Cog from a starting point to a goal position. Localization tasks were performed using infrared (IR) feedback to identify Cog's location on a predefined map. Lastly, a topological map was created by guiding Cog throughout the environment and collecting IR feedback data.
 							</p>
-							<video id="myVideo3" controls muted autoplay>
+							<video id="myVideo3" controls muted>
 								<source src="images/P4_Metric2.mp4">
 								Your browser does not support the video tag.
 							</video>
 							<p>
 								The project demonstrated that Cog could competently execute wireless communication, GUI operations, path planning and following, and localization and mapping. We evaluated and confirmed the effective application of our programming logics and solutions.
 							</p>
-							<video id="myVideo4" controls muted autoplay>
+							<video id="myVideo4" controls muted>
 								<source src="images/P4_Topological.mp4">
 								Your browser does not support the video tag.
 							</video>
@@ -516,8 +548,8 @@
 
 					</div>
 					<footer>
-						<p>Interested in seeing more of my work or discussing a project?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+						<p>Interested in a mechanical design, robotics, or controls conversation?</p>
+						<a href="#contact" class="button large scrolly">Get in touch</a>
 					</footer>
 				</div>
 			</article>
@@ -526,21 +558,21 @@
 		<article id="contact" class="wrapper style4">
 			<div class="container medium">
 				<header>
-					<h2>Let's make stuff together.</h2>
-					<p>Feel free to reach out to me about any project or collaboration ideas you have.</p>
+					<p class="eyebrow">Contact</p>
+					<h2>Let's talk engineering.</h2>
+					<p>Open to conversations about mechanical design, robotics, controls, prototyping, and related opportunities.</p>
 				</header>
 				<div class="row">
 					<div class="col-12">
-						<h3 data-aos="fade-up">Contact Information</h3>
-						<p data-aos="fade-up">Email: <a href="mailto:your-email@example.com">jiatongz@alumni.cmu.edu</a></p>
-						<p data-aos="fade-up">Phone: 267-909-2968</p>
+						<h3>Contact Information</h3>
+						<p>Email: <a href="mailto:jiatongz@alumni.cmu.edu">jiatongz@alumni.cmu.edu</a></p>
 					</div>
 					<div class="col-12">
 						<hr />
-						<h3>Find me on ...</h3>
-						<ul class="social">
-							<li><a href="https://www.linkedin.com/in/jiatongzhang1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/zhangjia8" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<h3>Profiles</h3>
+						<ul class="contact-links">
+							<li><a href="https://www.linkedin.com/in/jiatongzhang1/" target="_blank" rel="noopener">LinkedIn</a></li>
+							<li><a href="https://github.com/zhangjia8" target="_blank" rel="noopener">GitHub</a></li>
 						</ul>
 						<hr />
 					</div>
@@ -561,53 +593,14 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				document.querySelector('#project1-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project1-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project2-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project2-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project3-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project3-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project4-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project4-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project5-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project5-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project6-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project6-details');
-                details.classList.toggle('hidden');
-            	});
-			</script>
-			<script>
-				document.querySelector('#project7-toggle').addEventListener('click', function(e) {
-                e.preventDefault();
-                var details = document.querySelector('#project7-details');
-                details.classList.toggle('hidden');
-            	});
+				document.querySelectorAll('.project-toggle').forEach(function(button) {
+					button.addEventListener('click', function() {
+						var details = document.getElementById(button.dataset.target);
+						var isHidden = details.classList.toggle('hidden');
+						button.setAttribute('aria-expanded', String(!isHidden));
+						button.textContent = isHidden ? 'View case study' : 'Hide case study';
+					});
+				});
 			</script>
 
 			<script>
@@ -625,11 +618,6 @@
 			<script>
 				var video = document.getElementById('myVideo4');
 				video.playbackRate = 2; // Set the playback rate to 2x
-			</script>
-
-			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-			<script>
-				AOS.init();
 			</script>
 
 			<script>
@@ -651,6 +639,12 @@
 			</script>
 
 			<script>
+			document.querySelectorAll('.show-more-media').forEach(function(button) {
+				button.addEventListener('click', function() {
+					showMoreImages(button);
+				});
+			});
+
 			function showMoreImages(button) {
 				var slider = button.parentNode;
 				
@@ -688,19 +682,8 @@
 				
 				// Hide the button after showing more images
 				button.style.display = "none";
-
-				// Start playing the video
-  				newVideo1.play();
-				newVideo2.play();
 			}
 			</script>
 
-			<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-			<script type="text/javascript">
-			function googleTranslateElementInit() {
-			new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'zh-CN,ja,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-			}
-			</script>
-	
 	</body>
 </html>
